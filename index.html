@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+<meta name="theme-color" content="#101418">
+<title>Parker</title>
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="apple-touch-icon" href="./icons/icon-192.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<div id="map"></div>
+
+<header id="bar">
+  <form id="searchForm" autocomplete="off">
+    <input id="q" type="search" placeholder="Costco, Ontario CA" enterkeyhint="search">
+    <button type="button" id="here" title="Use my location" aria-label="Use my location">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+        <circle cx="12" cy="12" r="3.2" fill="currentColor"/>
+        <circle cx="12" cy="12" r="7.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M12 1v3M12 20v3M1 12h3M20 12h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <button type="button" id="gear" title="Sources and tuning" aria-label="Sources and tuning">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+        <circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/>
+        <path d="M12 2.5v2.2M12 19.3v2.2M4.2 12H2M22 12h-2.2M6.1 6.1 4.5 4.5M19.5 19.5l-1.6-1.6M17.9 6.1l1.6-1.6M4.5 19.5l1.6-1.6"
+              stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </form>
+  <ul id="results" hidden></ul>
+</header>
+
+<p id="status" hidden></p>
+<p id="live" hidden></p>
+<div id="toast" hidden></div>
+
+<section id="sheet" hidden aria-live="polite"></section>
+
+<div id="settings" class="overlay" hidden></div>
+<div id="modal" class="overlay" hidden></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script type="module" src="./app.js"></script>
+</body>
+</html>
