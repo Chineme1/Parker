@@ -55,7 +55,7 @@ git push -u origin main
 Then on GitHub: **Settings → Pages → Source: Deploy from a branch → main / (root)**.
 Wait about a minute for the first build.
 
-On the Pixel 8, open `https://YOURNAME.github.io/parker/` in Chrome, then
+On the Pixel 8, open `https://Chineme1/parker/` in Chrome, then
 **⋮ → Add to Home screen**. It installs with an icon, opens fullscreen with no
 browser chrome, and keeps your settings and entrance corrections between runs.
 
